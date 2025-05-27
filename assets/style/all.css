@@ -9,12 +9,13 @@
 	font-size: 14px;
 }
 
+/* header */
 header .container > div {
-	padding: 20px 0;
+	min-height: 80px;
 }
 
 header .main-item {
-	border: 1px solid #000;
+	line-height: 80px;
 }
 
 header .main-item:hover .sub-list {
@@ -24,12 +25,20 @@ header .main-item:hover .sub-list {
 header .sub-list {
 	display: none;
 	position: absolute;
-	top: 124px;
+	top: 120px;
 	right: 0;
 	left: 0;
 	background-color: #fff;
 	border-top: 1px solid #ddd;
 	padding: 40px 0;
+}
+
+header .sub-list .ads {
+	position: absolute;
+	width: 362px;
+	height: 100%;
+	top: 0;
+	right: 0;
 }
 
 header .sub-list .sub-items {
@@ -47,7 +56,6 @@ header .sub-list .sub-items a {
 
 header .actions button {
 	width: 44px;
-	height: 44px;
 }
 
 header .actions .cart-btn {
@@ -71,7 +79,7 @@ header .actions .cart-btn p.number {
 
 /* main */
 main {
-	padding-top: 84px;
+	padding-top: 80px;
 	padding-bottom: 40px;
 }
 
@@ -208,7 +216,6 @@ footer .subscript button {
 
 footer .subscript input {
 	width: 100%;
-	border: 1px solid #000;
 	padding: 12px 10px;
 	background-color: transparent;
 	color: var(--background-color);
