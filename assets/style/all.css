@@ -10,7 +10,6 @@
 }
 
 /* header */
-
 header .toogle {
   position: absolute;
   top: 53%;
@@ -75,6 +74,12 @@ header .user {
   }
 }
 
+@media (min-width: 1400px) {
+  header .logo {
+    top: 66%;
+  }
+}
+
 header .container > div {
   min-height: 80px;
 }
@@ -88,7 +93,7 @@ header .main-item:hover .sub-list {
 }
 
 header .sub-list {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 120px;
   right: 0;
