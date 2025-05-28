@@ -11,17 +11,26 @@
 
 /* header */
 
-header .container {
-  position: relative;
-}
-
-header .toggle {
+header .toogle {
   position: absolute;
   top: 53%;
   right: 16px;
   transform: translateY(-50%);
   width: 44px;
   z-index: 2;
+}
+
+header .toogle.show .close-menu {
+  display: block;
+}
+header .toogle.show .open-menu {
+  display: none;
+}
+header .toogle .close-menu {
+  display: none;
+}
+header .toogle .open-menu {
+  display: block;
 }
 
 header .logo {
@@ -38,8 +47,14 @@ header .user {
   opacity: 0;
 }
 
+@media (max-width: 1400px) {
+  header .container {
+    position: relative;
+  }
+}
+
 @media (min-width: 768px) {
-  header .toggle {
+  header .toogle {
     position: absolute;
     top: 50%;
     left: 0;
@@ -73,7 +88,7 @@ header .main-item:hover .sub-list {
 }
 
 header .sub-list {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 120px;
   right: 0;
