@@ -13,7 +13,7 @@
 header .toogle {
   position: absolute;
   top: 53%;
-  right: 16px;
+  right: 10px;
   transform: translateY(-50%);
   width: 44px;
   z-index: 2;
@@ -241,21 +241,8 @@ main {
 }
 
 /* 好文分享 */
-.articles .cards {
-  gap: 0 24px;
-  overflow: hidden;
-}
-
-.articles .cards .card {
-  width: calc(100% / 3 - 24px);
+.articles .card {
   aspect-ratio: 437 / 384;
-  flex-shrink: 0;
-}
-
-.articles .cards .card img {
-  height: 100%;
-  object-fit: cover;
-  margin-bottom: 20px;
 }
 
 /* promise */
